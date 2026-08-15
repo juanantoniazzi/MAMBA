@@ -1,0 +1,10 @@
+<!-- MAMBA · Ícono de app / favicon, versión final aprobada.
+     M de Bodoni Moda, peso 900, blanco sólido, sobre cuadrado redondeado
+     oscuro. Sin degradé ni transparencia en la letra: mismo blanco que el
+     wordmark, todo el carácter sale del peso tipográfico. ViewBox 512x512. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="112" fill="#0B0D0F"/>
+  <g transform="translate(77.87 396.21) scale(.189474 -.189474)" fill="#F4F6F5">
+    <path d="M742 -20 186 1500H618L960 594L1278 1500H1282L750 -20ZM188 1500V4H344V0H40V4H184V1496H30V1500ZM1850 1500V1496H1710V4H1850V0H1120V4H1280V1500Z"/>
+  </g>
+</svg>
