@@ -5,63 +5,116 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>MAMBA — No es suerte. Es estrategia.</title>
 <meta name="description" content="Agencia de performance marketing. Google Ads, diseño de landing pages, CRO y analítica para pymes y marcas en crecimiento.">
-<meta name="theme-color" content="#0B0D0F">
+<meta name="theme-color" content="#121017">
 <meta property="og:title" content="MAMBA — No es suerte. Es estrategia.">
 <meta property="og:description" content="Google Ads, diseño de landing pages, CRO y analítica.">
 <meta property="og:type" content="website">
 
-<!-- FAVICON: contorno exacto de la M de Bodoni Moda extraído del .ttf (opsz 96).
-     Dos pesos superpuestos — 400 arriba, 900 abajo — fundidos por una máscara
-     vertical: es el mismo gesto del monograma. No depende de ninguna webfont. -->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B0D0F'/%3E%3Cg transform='translate(17.16 43.68) scale(.015789 -.015789)' fill='%23F4F6F5'%3E%3Cpath d='M742 -20 186 1500H618L960 594L1278 1500H1282L750 -20ZM188 1500V4H344V0H40V4H184V1496H30V1500ZM1850 1500V1496H1710V4H1850V0H1120V4H1280V1500Z'/%3E%3C/g%3E%3C/svg%3E">
+<!-- FAVICON: el isotipo de escamas real (mismos paths/máscaras que el
+     <symbol id="iso"> del body), reconstruido acá porque un favicon
+     data-URI vive en un documento aparte y no puede referenciar el
+     <symbol> de la página ni heredar currentColor — así que va con
+     colores fijos (bg y texto de la paleta activa) en vez de variables.
+     Es vectorial, no depende de ninguna webfont. El icono (viewBox nativo
+     126.4×42, bien apaisado) se escala y centra dentro del mismo cuadrado
+     redondeado que usaba la M anterior, dejando margen arriba/abajo. -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23121017'/%3E%3Cg transform='translate(8,24.03) scale(.3797)'%3E%3Cdefs%3E%3Cpath id='pl' d='M0 0 a15 15 0 0 1 30 0 Z'/%3E%3Cpath id='pt' d='M0 0 a15 15 0 0 1 30 0 a15 6.0 0 0 1 -30 0 Z'/%3E%3Cmask id='k0' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Cuse href='%23pl' transform='translate(8.4,0) scale(1.33333)' fill='%23fff'/%3E%3Cuse href='%23pl' transform='translate(48.4,0) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pt' transform='translate(-16.4,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pt' transform='translate(26.8,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pt' transform='translate(70,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(5.2,22) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(48.4,22) scale(1.54667)' fill='%23000'/%3E%3C/mask%3E%3Cmask id='k1' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Cuse href='%23pl' transform='translate(51.6,0) scale(1.33333)' fill='%23fff'/%3E%3Cuse href='%23pt' transform='translate(-16.4,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pt' transform='translate(26.8,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pt' transform='translate(70,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(5.2,22) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(48.4,22) scale(1.54667)' fill='%23000'/%3E%3C/mask%3E%3Cmask id='k2' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Cuse href='%23pt' transform='translate(-13.2,11) scale(1.33333)' fill='%23fff'/%3E%3Cuse href='%23pt' transform='translate(26.8,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pt' transform='translate(70,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(5.2,22) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(48.4,22) scale(1.54667)' fill='%23000'/%3E%3C/mask%3E%3Cmask id='k3' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Cuse href='%23pt' transform='translate(30,11) scale(1.33333)' fill='%23fff'/%3E%3Cuse href='%23pt' transform='translate(70,11) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(5.2,22) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(48.4,22) scale(1.54667)' fill='%23000'/%3E%3C/mask%3E%3Cmask id='k4' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Cuse href='%23pt' transform='translate(73.2,11) scale(1.33333)' fill='%23fff'/%3E%3Cuse href='%23pl' transform='translate(5.2,22) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(48.4,22) scale(1.54667)' fill='%23000'/%3E%3C/mask%3E%3Cmask id='k5' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Cuse href='%23pl' transform='translate(8.4,22) scale(1.33333)' fill='%23fff'/%3E%3Cuse href='%23pl' transform='translate(48.4,22) scale(1.54667)' fill='%23000'/%3E%3C/mask%3E%3Cmask id='k6' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Cuse href='%23pl' transform='translate(51.6,22) scale(1.33333)' fill='%23fff'/%3E%3C/mask%3E%3Cmask id='kv' maskUnits='userSpaceOnUse' x='-400' y='-400' width='900' height='900'%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23fff'/%3E%3Cuse href='%23pl' transform='translate(-38,22) scale(1.54667)' fill='%23000'/%3E%3Cuse href='%23pl' transform='translate(91.6,22) scale(1.54667)' fill='%23000'/%3E%3C/mask%3E%3C/defs%3E%3Cg transform='translate(13.2,20)'%3E%3Cg mask='url(%23kv)'%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23F4F2F7' mask='url(%23k0)'/%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23F4F2F7' mask='url(%23k1)'/%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23F4F2F7' mask='url(%23k2)'/%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23F4F2F7' mask='url(%23k3)'/%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23F4F2F7' mask='url(%23k4)'/%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23F4F2F7' mask='url(%23k5)'/%3E%3Crect x='-400' y='-400' width='900' height='900' fill='%23F4F2F7' mask='url(%23k6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&display=swap" rel="stylesheet">
 
 <style>
 /* ============================================================
    MAMBA — DESIGN TOKENS
-   Paleta activa: OPCIÓN A "Veneno frío" (default).
-   Para cambiar de paleta: comentar el bloque A y descomentar B o C.
-   Ningún componente usa colores hardcodeados: todo pasa por estas vars.
+   Paleta activa: OPCIÓN F "Amatista" (fondo oscuro, confirmada).
+   Recorrido: A "Veneno frío" (aqua) descartada por parecido con CineAR
+   → D "Claro y directo" descartada porque la textura de escamas no
+   funcionaba en fondo claro → E "Grafito + ámbar" probada → esta,
+   Amatista, es la confirmada: violeta como acento único sobre grafito
+   frío (no el cálido de E — el violeta se ensucia contra un negro
+   cálido). Texto de los botones OSCURO sobre el violeta (confirmado
+   contra la alternativa de texto blanco). --c-accent/--c-accent2
+   conservan sus nombres históricos por compatibilidad con el resto de
+   la hoja, aunque ya no son aqua/violeta-secundario sino un violeta
+   único en dos intensidades. Para cambiar de paleta: comentar el
+   bloque activo y descomentar otro. Ningún componente usa colores
+   hardcodeados para su rol de marca: todo pasa por estas vars
+   (--c-on-accent y --c-error aparte, para textos que van ENCIMA de un
+   color sólido).
    ============================================================ */
 :root{
-  /* ---- OPCIÓN A · "Veneno frío" (ACTIVA) ---- */
-  --c-bg:        #0B0D0F;
-  --c-bg-2:      #14171A;
-  --c-aqua:      #3FE0C5;
-  --c-aqua-dk:   #1FA98F;
-  --c-violet:    #8B5CF6;
-  --c-violet-dk: #5B21B6;
-  --c-violet-tx: #A78BFA;   /* violeta legible para textos chicos (AA) */
-  --c-text:      #F4F6F5;
-  --c-muted:     #A7AFAD;
+  /* ---- OPCIÓN F · "Amatista" (ACTIVA) ---- */
+  --c-bg:        #121017;
+  --c-bg-2:      #1B1826;
+  --c-accent:      #8B5CF6;   /* amatista — antes aqua, ahora acento primario */
+  --c-accent-dk:   #5B21B6;
+  --c-accent2:    #5B21B6;   /* violeta oscuro — acento secundario */
+  --c-accent2-dk: #3B1370;
+  --c-accent2-tx: #C4B5FD;   /* violeta claro, legible para textos chicos (AA) */
+  --c-text:      #F4F2F7;
+  --c-muted:     #A7A2B3;
+  --c-on-accent: #15121C;   /* texto oscuro sobre el botón violeta (confirmado) */
+  --c-error:     #FF8B7B;
+  --c-error-rgb: 255,139,123;
 
-  /* ---- OPCIÓN B · "Neón nocturno" ----
-  --c-bg:#0A0A12; --c-bg-2:#12121F; --c-aqua:#2EF2C7; --c-aqua-dk:#12BF9B;
-  --c-violet:#A855F7; --c-violet-dk:#6D28D9; --c-violet-tx:#C4A6FD;
-  --c-text:#F8FAFC; --c-muted:#9CA3AF;
+  /* ---- OPCIÓN E · "Grafito + ámbar" (fondo oscuro) ----
+  --c-bg:#15100B; --c-bg-2:#1F1811; --c-accent:#E2A24C; --c-accent-dk:#B5651D;
+  --c-accent2:#B5651D; --c-accent2-dk:#7A4310; --c-accent2-tx:#D9A66B;
+  --c-text:#F5F0E8; --c-muted:#A99B87; --c-on-accent:#15100B;
+  --c-error:#FF8B7B; --c-error-rgb:255,139,123;
   */
 
-  /* ---- OPCIÓN C · "Elegante y editorial" ----
-  --c-bg:#111113; --c-bg-2:#1A1A1D; --c-aqua:#5EC9B7; --c-aqua-dk:#3E9E8E;
-  --c-violet:#9B8DC7; --c-violet-dk:#7C6FA8; --c-violet-tx:#B4A8D8;
-  --c-text:#EDEAE3; --c-muted:#8A8680;
+  /* ---- OPCIÓN D · "Claro y directo" (fondo claro — descartada: la
+     textura de escamas no funcionaba bien ahí) ----
+  --c-bg:#F5F4F1; --c-bg-2:#EBE9E4; --c-accent:#4338CA; --c-accent-dk:#322A9E;
+  --c-accent2:#7C3AED; --c-accent2-dk:#5B21B6; --c-accent2-tx:#6D28D9;
+  --c-text:#15171A; --c-muted:#6B6F76; --c-on-accent:#F5F4F1;
+  --c-error:#DC2626; --c-error-rgb:220,38,38;
   */
 
-  /* ---- TIPOGRAFÍA — tres roles, sin solaparse ----
-     Bodoni Moda  → EXCLUSIVA del wordmark y el monograma. No se usa en ningún
-                    otro sitio: es lo que hace que MAMBA se lea como marca.
-     Playfair     → títulos de sección. Didone también, pero de contraste más
-                    moderado, así que aguanta tamaños medios sin romperse.
-     Inter        → cuerpo, UI, botones, eslogan. */
-  --f-wordmark:'Bodoni Moda', 'Bodoni 72', Didot, ui-serif, serif;
-  --f-display:'Playfair Display', Georgia, ui-serif, serif;
+  /* ---- OPCIÓN A · "Veneno frío" (fondo oscuro — descartada: parecido a CineAR) ----
+  --c-bg:#0B0D0F; --c-bg-2:#14171A; --c-accent:#3FE0C5; --c-accent-dk:#1FA98F;
+  --c-accent2:#8B5CF6; --c-accent2-dk:#5B21B6; --c-accent2-tx:#A78BFA;
+  --c-text:#F4F6F5; --c-muted:#A7AFAD; --c-on-accent:#04110E;
+  --c-error:#FF8B7B; --c-error-rgb:255,139,123;
+  */
+
+  /* ---- OPCIÓN B · "Neón nocturno" (fondo oscuro) ----
+  --c-bg:#0A0A12; --c-bg-2:#12121F; --c-accent:#2EF2C7; --c-accent-dk:#12BF9B;
+  --c-accent2:#A855F7; --c-accent2-dk:#6D28D9; --c-accent2-tx:#C4A6FD;
+  --c-text:#F8FAFC; --c-muted:#9CA3AF; --c-on-accent:#04110E;
+  --c-error:#FF8B7B; --c-error-rgb:255,139,123;
+  */
+
+  /* ---- OPCIÓN C · "Elegante y editorial" (fondo oscuro) ----
+  --c-bg:#111113; --c-bg-2:#1A1A1D; --c-accent:#5EC9B7; --c-accent-dk:#3E9E8E;
+  --c-accent2:#9B8DC7; --c-accent2-dk:#7C6FA8; --c-accent2-tx:#B4A8D8;
+  --c-text:#EDEAE3; --c-muted:#8A8680; --c-on-accent:#04110E;
+  --c-error:#FF8B7B; --c-error-rgb:255,139,123;
+  */
+
+  /* ---- TIPOGRAFÍA — solo sans, dos roles ----
+     Jost 500     → EXCLUSIVA del lockup (isotipo + palabra). No se usa en
+                    ningún otro sitio: es lo que hace que MAMBA se lea como marca.
+                    Geométrica, hecha de círculos — como las escamas del isotipo.
+     Inter        → todo lo demás: títulos de sección, cuerpo, UI, botones,
+                    eslogan. Antes los títulos usaban Playfair Display (serif) —
+                    se sacó para que todo el sitio sea consistentemente sans.
+                    --f-display queda como alias de --f-body (mismo valor) en
+                    vez de borrar la variable, para no tener que tocar cada
+                    selector que la usa. */
+  --f-wordmark:'Jost', -apple-system, sans-serif;
   --f-body:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --f-display:var(--f-body);
 
-  /* Escala tipográfica fluida */
-  --t-wordmark: clamp(4rem, 18vw, 13rem);
+  /* Escala tipográfica fluida — --t-wordmark es el font-size que gobierna
+     todo el lockup del hero (isotipo + palabra juntos, no solo texto).
+     El hero usa la disposición VERTICAL (icono arriba, palabra debajo),
+     así que lo que limita el ancho total es la palabra sola, no
+     icono+palabra en fila — por eso el techo puede ser más generoso que
+     en una disposición horizontal. Ver bloque "Isologotipo" más abajo. */
+  --t-wordmark: clamp(2.4rem, 11vw, 6.4rem);
   --t-claim: clamp(1.5rem, 4.2vw, 2.9rem);
   --t-h2: clamp(1.9rem, 4.6vw, 3.2rem);
   --t-h3: clamp(1.2rem, 2.1vw, 1.5rem);
@@ -76,8 +129,10 @@
 
   /* Radios y bordes */
   --r-sm:8px; --r-md:16px; --r-lg:26px; --r-pill:999px;
-  --line: rgba(244,246,245,.10);
-  --line-strong: rgba(244,246,245,.18);
+  /* Líneas: tinte de --c-text sobre fondo oscuro — si en algún momento
+     se vuelve a una paleta clara, invertir a un tinte oscuro. */
+  --line: rgba(244,242,247,.10);
+  --line-strong: rgba(244,242,247,.18);
 
   /* Motion */
   --ease:cubic-bezier(.16,.84,.3,1);
@@ -98,12 +153,12 @@ body{
 img{max-width:100%;display:block}
 button,input,textarea{font:inherit;color:inherit}
 a{color:inherit}
-h1,h2,h3{font-family:var(--f-display); font-weight:500; line-height:1.08; letter-spacing:-.01em; margin:0}
+h1,h2,h3{font-family:var(--f-display); font-weight:600; line-height:1.1; letter-spacing:-.015em; margin:0}
 p{margin:0}
-::selection{background:var(--c-aqua); color:#04110E}
-:focus-visible{outline:2px solid var(--c-aqua); outline-offset:3px; border-radius:4px}
+::selection{background:var(--c-accent); color:var(--c-on-accent)}
+:focus-visible{outline:2px solid var(--c-accent); outline-offset:3px; border-radius:4px}
 
-.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--c-aqua);color:#04110E;padding:.75rem 1.25rem;border-radius:0 0 var(--r-sm) 0;font-weight:600}
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--c-accent);color:var(--c-on-accent);padding:.75rem 1.25rem;border-radius:0 0 var(--r-sm) 0;font-weight:600}
 .skip:focus{left:0}
 
 /* ============================================================
@@ -128,34 +183,38 @@ p{margin:0}
   background-size:30px 18px;
 }
 .skin{
+  /* Vuelta a fondo oscuro: la escama se pinta blanca otra vez, visible
+     por contraste de brillo contra el grafito (así se probó y funciona;
+     aplanarla generaba costuras visibles). */
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='18'%3E%3Cdefs%3E%3ClinearGradient id='s' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff' stop-opacity='1'/%3E%3Cstop offset='.5' stop-color='%23ffffff' stop-opacity='.42'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='url(%23s)'%3E%3Cpath d='M0 0a15 15 0 0 1 30 0z'/%3E%3Cpath d='M-15 9a15 15 0 0 1 30 0z'/%3E%3Cpath d='M15 9a15 15 0 0 1 30 0z'/%3E%3Cpath d='M0 18a15 15 0 0 1 30 0z'/%3E%3Cpath d='M-15 27a15 15 0 0 1 30 0z'/%3E%3Cpath d='M15 27a15 15 0 0 1 30 0z'/%3E%3C/g%3E%3C/svg%3E");
   opacity:var(--skin-a);
 }
 .skin-spec{
+  /* Brillo blanco, con franjas amatista a los costados. */
   background-image:linear-gradient(172deg,
     transparent 33%,
-    rgba(63,224,197,.42) 43%,
+    rgba(139,92,246,.42) 43%,
     rgba(255,255,255,.92) 50%,
-    rgba(139,92,246,.42) 57%,
+    rgba(91,33,182,.42) 57%,
     transparent 67%);
   background-size:auto 260vh;
   background-repeat:no-repeat;
-  /* -170vh en vez de -80vh: a scroll=0 el pico brillante del degradé cae
-     fuera del viewport (arriba), no detrás del H1. Entra en escena recién
-     tras scrollear, cuando --spec-a ya bajó de intensidad. Verificado:
-     contraste wordmark/fondo pasa de 6.5:1 a >13:1 en la carga inicial. */
+  /* -170vh en vez de -80vh: a scroll=0 el pico del degradé cae fuera del
+     viewport (arriba), no detrás del H1. Entra en escena recién tras
+     scrollear, cuando --spec-a ya bajó de intensidad — así nunca compite
+     con el contraste del wordmark en la carga inicial. */
   background-position:0 calc(-170vh + var(--spec, 0px));
   -webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='18'%3E%3Cdefs%3E%3ClinearGradient id='s' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff' stop-opacity='1'/%3E%3Cstop offset='.5' stop-color='%23ffffff' stop-opacity='.42'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='url(%23s)'%3E%3Cpath d='M0 0a15 15 0 0 1 30 0z'/%3E%3Cpath d='M-15 9a15 15 0 0 1 30 0z'/%3E%3Cpath d='M15 9a15 15 0 0 1 30 0z'/%3E%3Cpath d='M0 18a15 15 0 0 1 30 0z'/%3E%3Cpath d='M-15 27a15 15 0 0 1 30 0z'/%3E%3Cpath d='M15 27a15 15 0 0 1 30 0z'/%3E%3C/g%3E%3C/svg%3E");
           mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='18'%3E%3Cdefs%3E%3ClinearGradient id='s' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23ffffff' stop-opacity='1'/%3E%3Cstop offset='.5' stop-color='%23ffffff' stop-opacity='.42'/%3E%3Cstop offset='1' stop-color='%23ffffff' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='url(%23s)'%3E%3Cpath d='M0 0a15 15 0 0 1 30 0z'/%3E%3Cpath d='M-15 9a15 15 0 0 1 30 0z'/%3E%3Cpath d='M15 9a15 15 0 0 1 30 0z'/%3E%3Cpath d='M0 18a15 15 0 0 1 30 0z'/%3E%3Cpath d='M-15 27a15 15 0 0 1 30 0z'/%3E%3Cpath d='M15 27a15 15 0 0 1 30 0z'/%3E%3C/g%3E%3C/svg%3E");
   -webkit-mask-size:30px 18px; mask-size:30px 18px;
   opacity:var(--spec-a);
 }
-/* Glows de color ambiente: violeta y verde agua conviviendo con el negro */
+/* Glows de color ambiente: cobre y ámbar conviviendo con el grafito */
 .glows{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
 .glows i{position:absolute;display:block;border-radius:50%;filter:blur(90px);opacity:.5}
-.glows i:nth-child(1){width:52vw;height:52vw;top:-14vw;left:-10vw;background:radial-gradient(circle,var(--c-violet-dk),transparent 68%)}
-.glows i:nth-child(2){width:46vw;height:46vw;top:38%;right:-14vw;background:radial-gradient(circle,var(--c-aqua-dk),transparent 68%);opacity:.33}
-.glows i:nth-child(3){width:60vw;height:60vw;bottom:-22vw;left:12vw;background:radial-gradient(circle,var(--c-violet),transparent 70%);opacity:.22}
+.glows i:nth-child(1){width:52vw;height:52vw;top:-14vw;left:-10vw;background:radial-gradient(circle,var(--c-accent2-dk),transparent 68%)}
+.glows i:nth-child(2){width:46vw;height:46vw;top:38%;right:-14vw;background:radial-gradient(circle,var(--c-accent-dk),transparent 68%);opacity:.33}
+.glows i:nth-child(3){width:60vw;height:60vw;bottom:-22vw;left:12vw;background:radial-gradient(circle,var(--c-accent2),transparent 70%);opacity:.22}
 
 /* ---------- Layout ---------- */
 .wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad-x)}
@@ -176,25 +235,40 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
   margin-right:auto;text-decoration:none;color:var(--c-text);
   display:flex; align-items:center; gap:.6rem;
 }
-.brand-wm{
-  font-family:var(--f-wordmark); font-weight:400; font-size:1.05rem;
-  font-variation-settings:'opsz' 24;
-  letter-spacing:.4em; text-indent:.4em; text-transform:uppercase;
+/* ============================================================
+   ISOLOGOTIPO — icono de escamas (mismo motivo que la textura del
+   sitio) + "MAMBA" en Jost 500. Reemplaza al sistema anterior de M +
+   recuadro. El símbolo vive UNA sola vez como <symbol id="iso"> (SVG
+   oculto, justo después de <body>) y se reutiliza con <use> en nav,
+   hero, footer y el sello de "Sobre MAMBA" — nunca se duplica el path.
+   Usa currentColor, así que hereda el color de texto de donde se use
+   sin ninguna variable extra.
+   Proporción propia del símbolo: viewBox 126.4 × 42 (≈3:1, ancho).
+   .brand-wm / .foot-wm → lockup HORIZONTAL (icono + palabra en fila),
+   usado en nav y footer, a tamaño de texto normal.
+   .wordmark → lockup VERTICAL (icono arriba, palabra debajo, centrado)
+   a la escala del hero (font-size fluido, ver --t-wordmark), con la
+   palabra entrando con blur (@keyframes unfurl). Las dos disposiciones
+   comparten CSS base (display/color/tipografía de la palabra); .wordmark
+   sobreescribe flex-direction y el margen del ícono más abajo.
+   .seal-ico → el símbolo SOLO, sin la palabra (así lo pide el sello de
+   "Sobre MAMBA": es un monograma aislado, no un lockup completo).
+   Medidas tomadas del entregable de marca: icono 1.70× la altura de la
+   palabra, separación 0.58em, tracking de la palabra 0.24em. ============================================================ */
+.brand-wm, .foot-wm, .wordmark{
+  display:inline-flex; align-items:center; color:currentColor;
 }
-
-/* ---------- Ícono de marca: M peso 900, blanco sólido, con recuadro blanco
-   marcando el área segura — sin relleno, transparente. Se reutiliza tal
-   cual en el nav (chico, junto al wordmark) y en "Sobre MAMBA" (grande,
-   como sello, solo). Siempre va con su recuadro — nunca suelto sin el
-   borde — y con harto aire entre la letra y el borde. */
-/* stroke-width .5 sobre un rect con esquinas curvas, mostrado en tamaños
-   chicos (30px), cae en sub-píxel: el navegador antialiasea la curva de
-   forma distinta a los lados rectos y las esquinas se ven más gruesas/
-   blancas que el resto del borde. .7 + geometricPrecision lo corrige sin
-   que se sienta grueso. */
-.icon-mark rect{fill:none; stroke:var(--c-text); stroke-width:.7; shape-rendering:geometricPrecision}
-.icon-mark path{fill:var(--c-text)}
-.brand-ico{width:30px;height:30px;flex:none}
+.brand-wm svg, .foot-wm svg, .wordmark svg{
+  display:block; flex:none; height:1.70em; margin-right:.58em;
+  transform:translateY(.02em);
+}
+.brand-wm .w, .foot-wm .w, .wordmark .w{
+  font-family:var(--f-wordmark); font-weight:500; letter-spacing:.24em;
+  text-indent:.24em; line-height:1; text-transform:uppercase;
+  display:inline-block;
+}
+.brand-wm{ font-size:.98rem }
+.foot-wm{ font-size:1.05rem }
 .nav-links{display:none;gap:var(--s-3);align-items:center}
 @media(min-width:940px){.nav-links{display:flex}}
 .nav-links a{
@@ -203,7 +277,7 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
 }
 .nav-links a::after{
   content:'';position:absolute;left:0;bottom:0;height:1px;width:100%;
-  background:linear-gradient(90deg,var(--c-aqua),var(--c-violet));
+  background:linear-gradient(90deg,var(--c-accent),var(--c-accent2));
   transform:scaleX(0);transform-origin:left;transition:transform .45s var(--ease);
 }
 .nav-links a:hover,.nav-links a.active{color:var(--c-text)}
@@ -215,7 +289,7 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
   padding:.32rem .6rem;border-radius:var(--r-pill);color:var(--c-muted);
   transition:color .25s,background .25s; min-height:32px;
 }
-.lang button[aria-pressed="true"]{background:var(--c-aqua);color:#04110E}
+.lang button[aria-pressed="true"]{background:var(--c-accent);color:var(--c-on-accent)}
 
 .burger{display:grid;place-items:center;width:44px;height:44px;background:none;border:1px solid var(--line-strong);border-radius:var(--r-sm);cursor:pointer}
 @media(min-width:940px){.burger{display:none}}
@@ -225,18 +299,46 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
 .burger[aria-expanded="true"] i:nth-child(2){opacity:0}
 .burger[aria-expanded="true"] i:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
 
+/* Antes: fondo 100% sólido, sin color, tipografía igual que los
+   títulos pero sin nada que la distinga de una lista cualquiera. Ahora:
+   (1) fondo translúcido + blur en vez de opaco — deja asomar el glow
+   violeta y la textura que ya cubren el resto del sitio, así el menú no
+   se siente una pantalla aparte; (2) cada link suma la misma numeración
+   editorial que ya usa "Metodología" (counter CSS, sin tocar el i18n);
+   (3) hover/foco pasan a violeta y dibujan el mismo subrayado en
+   degradé que el nav de escritorio — mismo lenguaje de interacción en
+   los dos breakpoints. */
 .drawer{
-  position:fixed;inset:0;z-index:55;background:var(--c-bg);
+  position:fixed;inset:0;z-index:55;
+  background:color-mix(in srgb, var(--c-bg) 90%, transparent);
+  backdrop-filter:blur(22px); -webkit-backdrop-filter:blur(22px);
   display:flex;flex-direction:column;justify-content:center;gap:var(--s-2);
   padding:var(--s-6) var(--pad-x);
   clip-path:circle(0% at calc(100% - 44px) 34px);
   transition:clip-path .6s var(--ease); visibility:hidden;
+  counter-reset:dnav;
 }
 .drawer.open{clip-path:circle(150% at calc(100% - 44px) 34px);visibility:visible}
 .drawer a{
-  font-family:var(--f-display);font-size:clamp(1.9rem,9vw,2.8rem);text-decoration:none;
-  opacity:0;transform:translateX(-24px);transition:opacity .5s var(--ease),transform .6s var(--ease);
+  position:relative; display:inline-flex; align-items:baseline; gap:.55rem;
+  width:fit-content;
+  font-family:var(--f-display); font-weight:600; font-size:clamp(1.9rem,9vw,2.8rem);
+  text-decoration:none; color:var(--c-text);
+  opacity:0;transform:translateX(-24px);
+  transition:opacity .5s var(--ease),transform .6s var(--ease),color .3s var(--ease);
 }
+.drawer a::before{
+  counter-increment:dnav; content:'0' counter(dnav);
+  font-size:.4em; font-weight:500; letter-spacing:.06em;
+  color:var(--c-accent2-tx); opacity:.85;
+}
+.drawer a::after{
+  content:''; position:absolute; left:0; bottom:-.06em; height:2px; width:100%;
+  background:linear-gradient(90deg,var(--c-accent),var(--c-accent2));
+  transform:scaleX(0); transform-origin:left; transition:transform .4s var(--ease);
+}
+.drawer a:hover, .drawer a:focus-visible{ color:var(--c-accent) }
+.drawer a:hover::after, .drawer a:focus-visible::after{ transform:scaleX(1) }
 .drawer.open a{opacity:1;transform:none}
 .drawer.open a:nth-child(1){transition-delay:.14s}
 .drawer.open a:nth-child(2){transition-delay:.2s}
@@ -251,10 +353,19 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
   font-weight:600;font-size:.95rem;text-decoration:none;cursor:pointer;border:1px solid transparent;
   transition:transform .4s var(--ease), box-shadow .4s var(--ease), background .35s, color .35s, border-color .35s;
 }
-.btn-primary{background:var(--c-aqua);color:#04110E}
-.btn-primary:hover{background:#5BEAD3;transform:translateY(-2px);box-shadow:0 14px 34px -12px rgba(63,224,197,.6)}
+.btn-primary{background:var(--c-accent);color:var(--c-on-accent)}
+/* Anillo fino y nítido (2px, sin blur) en vez de tocar el color del
+   fondo — el violeta del botón se mantiene igual de sólido en hover,
+   nada de oscurecer (pierde contraste sobre el negro) ni aclarar
+   (queda pálido). El offset (box-shadow con blur:0 más un aro extra
+   separado del borde) hace que se lea como un anillo alrededor, no
+   como un borde pegado. */
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0 0 2px var(--c-bg), 0 0 0 4px var(--c-accent);
+}
 .btn-ghost{border-color:var(--line-strong);color:var(--c-text);background:transparent}
-.btn-ghost:hover{border-color:var(--c-aqua);color:var(--c-aqua);transform:translateY(-2px)}
+.btn-ghost:hover{border-color:var(--c-accent);color:var(--c-accent);transform:translateY(-2px)}
 .btn .arw{transition:transform .4s var(--ease)}
 .btn:hover .arw{transform:translateX(4px)}
 
@@ -263,12 +374,12 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
 .sec-head{max-width:62ch;margin-bottom:var(--s-5)}
 .sec-head h2{font-size:var(--t-h2);margin-bottom:var(--s-2)}
 
-/* Banda con degradé violeta ↔ verde agua protagónico */
+/* Banda con degradé violeta protagónico */
 .band{
   background:
-    radial-gradient(120% 90% at 12% 0%, color-mix(in srgb, var(--c-violet-dk) 60%, transparent), transparent 62%),
-    radial-gradient(110% 90% at 92% 100%, color-mix(in srgb, var(--c-aqua-dk) 46%, transparent), transparent 60%),
-    linear-gradient(160deg, #171029, var(--c-bg) 52%, #08211D);
+    radial-gradient(120% 90% at 12% 0%, color-mix(in srgb, var(--c-accent2-dk) 60%, transparent), transparent 62%),
+    radial-gradient(110% 90% at 92% 100%, color-mix(in srgb, var(--c-accent-dk) 46%, transparent), transparent 60%),
+    linear-gradient(160deg, #1A1430, var(--c-bg) 52%, #0D0A17);
   border-block:1px solid var(--line);
 }
 
@@ -278,13 +389,66 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
   min-height:calc(100svh - 68px); display:flex; flex-direction:column;
   justify-content:center; text-align:center;
 }
-.hero h1{margin:0}
+.hero h1{margin:0;position:relative}
+/* Vignette suave detrás del H1: negro a transparente, opacidad baja.
+   Sube el contraste entre el wordmark/claim y la textura de escamas
+   (.skin) que corre por detrás, y baja el ruido visual general de esa
+   zona sin tapar el fondo. Va como ::before (primer hijo, sin z-index)
+   para pintarse antes que .wordmark/.claim en el orden normal del
+   documento — así queda detrás del texto sin necesitar trucos de stacking. */
+.hero h1::before{
+  content:'';
+  position:absolute;
+  inset:-14% -30%;
+  background:radial-gradient(58% 60% at 50% 38%, rgba(0,0,0,.4), transparent 72%);
+  pointer-events:none;
+}
+/* El lockup del hero reusa las reglas compartidas de .wordmark (arriba,
+   junto con .brand-wm/.foot-wm) — acá se agrega la escala grande
+   (--t-wordmark, fluida), la entrada con blur+fade (unfurl), y se pasa
+   de la disposición horizontal (icono + palabra en fila, la que usan
+   nav/footer) a la VERTICAL (icono arriba, palabra debajo, centrado) —
+   ambas disposiciones vienen del entregable de marca; acá se prueba la
+   vertical como protagonista del hero en vez de la horizontal. */
 .wordmark{
-  display:block; font-family:var(--f-wordmark); font-weight:400;
-  font-variation-settings:'opsz' 96;
-  font-size:var(--t-wordmark); line-height:.92;
-  letter-spacing:.13em; text-indent:.13em; text-transform:uppercase;
+  flex-direction:column;
+  justify-content:center;
+  font-size:var(--t-wordmark);
   animation:unfurl 1.5s var(--ease) both;
+}
+.wordmark svg{
+  /* Más chico que el 1.76em del entregable de marca (pensado para la
+     disposición vertical "de catálogo", aislada): acá al lado de la
+     palabra a tamaño hero se sentía demasiado protagónico. */
+  margin-right:0; margin-bottom:.22em;
+  height:1.15em; transform:none;
+}
+/* Animación de entrada del isotipo del hero: las 7 escamas aparecen una
+   por una (fade + un leve asentamiento vertical) en vez de todas juntas
+   de golpe — la idea es que se lea como el mosaico armándose, no como
+   un efecto decorativo suelto. SOLO pasa acá: nav/footer/sello siguen
+   usando <use href="#iso"/> contra el símbolo compartido (sin animar),
+   así que esta copia del ícono vive inline en el propio markup del hero
+   (con ids "hi-*" para no pisar los del símbolo compartido) — es la
+   única forma de animar cada escama por separado sin que la animación
+   se dispare también en nav/footer, que reusan la MISMA definición.
+   Corre en paralelo al blur+fade del wordmark entero (unfurl): no hace
+   falta coordinarlas a mano, las dos arrancan en t=0 y el resultado es
+   un fade compuesto que igual deja ver el armado escama por escama. */
+.hero-iso .hi-r{
+  opacity:0; transform:translateY(5px);
+  animation:scaleIn .4s var(--ease) both;
+}
+.hero-iso .hi-r:nth-child(1){animation-delay:0ms}
+.hero-iso .hi-r:nth-child(2){animation-delay:45ms}
+.hero-iso .hi-r:nth-child(3){animation-delay:90ms}
+.hero-iso .hi-r:nth-child(4){animation-delay:135ms}
+.hero-iso .hi-r:nth-child(5){animation-delay:180ms}
+.hero-iso .hi-r:nth-child(6){animation-delay:225ms}
+.hero-iso .hi-r:nth-child(7){animation-delay:270ms}
+@keyframes scaleIn{
+  from{opacity:0; transform:translateY(5px)}
+  to{opacity:1; transform:translateY(0)}
 }
 /* Eslogan en sans, tratado como ETIQUETA: pequeño, versalitas, tracking muy
    abierto. Deja de competir con el wordmark y se comporta como una firma
@@ -295,11 +459,11 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
   letter-spacing:.42em; text-indent:.42em; text-transform:uppercase;
   margin-top:clamp(1.3rem,3vw,2.2rem); color:var(--c-muted);
 }
-.claim b{font-weight:600;color:var(--c-aqua)}
+.claim b{font-weight:600;color:var(--c-accent)}
 .hero-cta{display:flex;flex-wrap:wrap;gap:var(--s-2);justify-content:center;margin-top:var(--s-4)}
 .hero-trust{display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem 1.4rem;margin-top:var(--s-4);font-size:var(--t-small);color:var(--c-muted)}
 .hero-trust span{display:flex;align-items:center;gap:.5rem}
-.hero-trust span::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--c-aqua)}
+.hero-trust span::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--c-accent)}
 
 /* Franja de servicios al pie del hero: qué vendemos, de un vistazo */
 .strip{
@@ -310,12 +474,12 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
   font-size:.78rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
   color:var(--c-muted);
 }
-.strip i{width:4px;height:4px;border-radius:50%;background:var(--c-aqua);opacity:.65;flex:none}
+.strip i{width:4px;height:4px;border-radius:50%;background:var(--c-accent);opacity:.65;flex:none}
 @media(max-width:560px){.strip i{display:none}.strip{gap:.35rem;flex-direction:column}}
 
 @keyframes unfurl{
-  from{opacity:0;letter-spacing:.34em;filter:blur(6px)}
-  to{opacity:1;letter-spacing:.13em;filter:blur(0)}
+  from{opacity:0;filter:blur(6px)}
+  to{opacity:1;filter:blur(0)}
 }
 
 /* ---------- Servicios ---------- */
@@ -329,14 +493,14 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
 }
 .card::after{
   content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;
-  background:radial-gradient(60% 70% at 100% 0%, color-mix(in srgb,var(--c-aqua) 16%, transparent), transparent 70%);
+  background:radial-gradient(60% 70% at 100% 0%, color-mix(in srgb,var(--c-accent) 16%, transparent), transparent 70%);
   opacity:0;transition:opacity .55s var(--ease);
 }
-.card:hover{border-color:color-mix(in srgb,var(--c-aqua) 42%, transparent);transform:translateY(-4px)}
+.card:hover{border-color:color-mix(in srgb,var(--c-accent) 42%, transparent);transform:translateY(-4px)}
 .card:hover::after{opacity:1}
 .card h3{font-size:var(--t-h3);margin:var(--s-2) 0 .6rem}
 .card p{color:var(--c-muted);font-size:.97rem}
-.ico{width:44px;height:44px;color:var(--c-aqua)}
+.ico{width:44px;height:44px;color:var(--c-accent)}
 
 /* ---------- Metodología ---------- */
 .steps{display:grid;gap:var(--s-2);counter-reset:st}
@@ -344,12 +508,12 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
 .step{position:relative;padding-top:var(--s-3);border-top:1px solid var(--line-strong)}
 .step::before{
   counter-increment:st;content:'0' counter(st);
-  font-family:var(--f-display);font-size:.85rem;letter-spacing:.16em;color:var(--c-aqua);
+  font-family:var(--f-display);font-size:.85rem;letter-spacing:.16em;color:var(--c-accent);
   display:block;margin-bottom:.9rem;
 }
 .step h3{font-size:1.14rem;margin-bottom:.55rem}
 .step p{color:var(--c-muted);font-size:.94rem}
-.step .dot{position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;background:var(--c-aqua);box-shadow:0 0 14px var(--c-aqua)}
+.step .dot{position:absolute;top:-4px;left:0;width:7px;height:7px;border-radius:50%;background:var(--c-accent);box-shadow:0 0 14px var(--c-accent)}
 
 /* ---------- Sobre + monograma ---------- */
 .about{display:grid;gap:var(--s-4);align-items:start}
@@ -359,19 +523,23 @@ section{position:relative;padding-block:var(--s-5) var(--s-6)}
 .about-copy p+p{margin-top:var(--s-2)}
 .sig{font-family:var(--f-display);font-style:italic;font-size:1.28rem;color:var(--c-text);margin-top:var(--s-3)}
 
-/* SELLO: solo el ícono de marca (M 900 sobre cuadrado redondeado, con su
-   recuadro blanco de área segura) — mismo asset que el favicon y el ícono
-   de app, sin wordmark ni bajada al lado. Arranca a la misma altura que el
-   título, no flota centrado en la columna. */
+/* SELLO: el isotipo SOLO (sin la palabra) — el mismo <symbol id="iso">
+   que en nav/hero/footer, vía <use>, a un tamaño bien visible. Arranca a
+   la misma altura que el título, no flota centrado en la columna. Como
+   el símbolo es más ancho que alto (viewBox 126.4×42), el ancho manda:
+   la altura sale sola de su proporción real. */
 .seal{ padding-top:.3rem }
-.seal .seal-ico{ width:clamp(6.8rem,14vw,9.5rem); height:clamp(6.8rem,14vw,9.5rem) }
+.seal .seal-ico{
+  display:block; color:var(--c-text);
+  width:clamp(9.5rem,20vw,13rem); height:auto;
+}
 
 /* ---------- Por qué ---------- */
 .why{display:grid;gap:0}
 @media(min-width:820px){.why{grid-template-columns:repeat(2,1fr);column-gap:var(--s-5)}}
 .why-item{padding-block:var(--s-3);border-bottom:1px solid var(--line);display:grid;gap:.5rem}
 .why-item h3{font-size:1.18rem;display:flex;align-items:baseline;gap:.7rem}
-.why-item h3 b{font-family:var(--f-body);font-size:.72rem;font-weight:600;letter-spacing:.14em;color:var(--c-violet-tx)}
+.why-item h3 b{font-family:var(--f-body);font-size:.72rem;font-weight:600;letter-spacing:.14em;color:var(--c-accent2-tx)}
 .why-item p{color:var(--c-muted);font-size:.96rem}
 
 /* ---------- Contacto ---------- */
@@ -390,22 +558,22 @@ form{display:grid;gap:var(--s-2)}
   transition:border-color .3s,background .3s,box-shadow .3s;
 }
 .field textarea{min-height:140px;resize:vertical;line-height:1.6}
-.field input:focus,.field textarea:focus{border-color:var(--c-aqua);background:var(--c-bg-2);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--c-aqua) 20%,transparent)}
-.field .err{font-size:.78rem;color:#FF8B7B;min-height:1em}
-.field.invalid input,.field.invalid textarea{border-color:#FF8B7B}
+.field input:focus,.field textarea:focus{border-color:var(--c-accent);background:var(--c-bg-2);outline:none;box-shadow:0 0 0 3px color-mix(in srgb,var(--c-accent) 20%,transparent)}
+.field .err{font-size:.78rem;color:var(--c-error);min-height:1em}
+.field.invalid input,.field.invalid textarea{border-color:var(--c-error)}
 .form-note{font-size:.78rem;color:var(--c-muted)}
 .sending{pointer-events:none;opacity:.75}
-.spin{display:inline-block;width:15px;height:15px;border:2px solid rgba(4,17,14,.3);border-top-color:#04110E;border-radius:50%;animation:sp .7s linear infinite}
+.spin{display:inline-block;width:15px;height:15px;border:2px solid color-mix(in srgb, var(--c-on-accent) 30%, transparent);border-top-color:var(--c-on-accent);border-radius:50%;animation:sp .7s linear infinite}
 @keyframes sp{to{transform:rotate(360deg)}}
 .success{
-  display:none;padding:var(--s-4);border:1px solid color-mix(in srgb,var(--c-aqua) 45%,transparent);
-  border-radius:var(--r-lg);background:color-mix(in srgb,var(--c-aqua) 9%,transparent);text-align:center;
+  display:none;padding:var(--s-4);border:1px solid color-mix(in srgb,var(--c-accent) 45%,transparent);
+  border-radius:var(--r-lg);background:color-mix(in srgb,var(--c-accent) 9%,transparent);text-align:center;
 }
 .success.show{display:grid;gap:.6rem;justify-items:center;animation:slither .8s var(--ease) both}
-.success svg{width:42px;height:42px;color:var(--c-aqua)}
+.success svg{width:42px;height:42px;color:var(--c-accent)}
 .success h3{font-size:1.45rem}
 .success p{color:var(--c-muted);max-width:40ch}
-.alert{display:none;padding:.9rem 1rem;border-radius:var(--r-md);border:1px solid #FF8B7B;color:#FF8B7B;font-size:.88rem;background:rgba(255,139,123,.08)}
+.alert{display:none;padding:.9rem 1rem;border-radius:var(--r-md);border:1px solid var(--c-error);color:var(--c-error);font-size:.88rem;background:rgba(var(--c-error-rgb),.08)}
 .alert.show{display:block}
 
 /* ---------- Footer ---------- */
@@ -415,7 +583,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 .foot h4{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--c-muted);margin:0 0 var(--s-2);font-family:var(--f-body);font-weight:600}
 .foot ul{list-style:none;margin:0;padding:0;display:grid;gap:.6rem}
 .foot a{text-decoration:none;color:var(--c-muted);font-size:.92rem;transition:color .3s}
-.foot a:hover{color:var(--c-aqua)}
+.foot a:hover{color:var(--c-accent)}
 .foot-tag{font-family:var(--f-display);font-style:italic;color:var(--c-muted);margin-top:.8rem}
 .foot-bottom{display:flex;flex-wrap:wrap;gap:var(--s-2);justify-content:space-between;align-items:center;margin-top:var(--s-5);padding-top:var(--s-3);border-top:1px solid var(--line);font-size:.8rem;color:var(--c-muted)}
 
@@ -451,11 +619,81 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.15s!important}
   .skin-spec{display:none}
   .rv.in{animation:none;opacity:1}
-  .wordmark{animation:none;letter-spacing:.13em}
+  .wordmark{animation:none}
+  .hero-iso .hi-r{animation:none;opacity:1;transform:none}
 }
 </style>
 </head>
 <body>
+
+<!-- Isotipo — un solo símbolo maestro, reutilizado con <use> en nav, hero,
+     footer y el sello de "Sobre MAMBA". currentColor: no lleva color propio,
+     hereda el del elemento donde se use. Siete escamas en rombo, con la
+     segunda fila terminando en punta, construidas con la misma geometría
+     que la textura "piel de mamba" del sitio. -->
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="iso" viewBox="0 0 126.40 42.00">
+      <defs><path id="pl" d="M0 0 a15 15 0 0 1 30 0 Z"/><path id="pt" d="M0 0 a15 15 0 0 1 30 0 a15 6.0 0 0 1 -30 0 Z"/>
+      <mask id="k0" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <use href="#pl" transform="translate(8.400,0.000) scale(1.33333)" fill="#fff"/>
+        <use href="#pl" transform="translate(48.400,0.000) scale(1.54667)" fill="#000"/>
+        <use href="#pt" transform="translate(-16.400,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pt" transform="translate(26.800,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/>
+      </mask>
+      <mask id="k1" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <use href="#pl" transform="translate(51.600,0.000) scale(1.33333)" fill="#fff"/>
+        <use href="#pt" transform="translate(-16.400,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pt" transform="translate(26.800,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/>
+      </mask>
+      <mask id="k2" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <use href="#pt" transform="translate(-13.200,11.000) scale(1.33333)" fill="#fff"/>
+        <use href="#pt" transform="translate(26.800,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/>
+      </mask>
+      <mask id="k3" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <use href="#pt" transform="translate(30.000,11.000) scale(1.33333)" fill="#fff"/>
+        <use href="#pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/>
+      </mask>
+      <mask id="k4" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <use href="#pt" transform="translate(73.200,11.000) scale(1.33333)" fill="#fff"/>
+        <use href="#pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/>
+      </mask>
+      <mask id="k5" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <use href="#pl" transform="translate(8.400,22.000) scale(1.33333)" fill="#fff"/>
+        <use href="#pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/>
+      </mask>
+      <mask id="k6" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <use href="#pl" transform="translate(51.600,22.000) scale(1.33333)" fill="#fff"/>
+      </mask>
+      <mask id="kv" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900">
+        <rect x="-400" y="-400" width="900" height="900" fill="#fff"/>
+        <use href="#pl" transform="translate(-38.000,22.000) scale(1.54667)" fill="#000"/>
+        <use href="#pl" transform="translate(91.600,22.000) scale(1.54667)" fill="#000"/>
+      </mask></defs>
+      <g transform="translate(13.200,20.000)"><g mask="url(#kv)">
+        <rect x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#k0)"/>
+        <rect x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#k1)"/>
+        <rect x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#k2)"/>
+        <rect x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#k3)"/>
+        <rect x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#k4)"/>
+        <rect x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#k5)"/>
+        <rect x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#k6)"/>
+      </g></g>
+    </symbol>
+  </defs>
+</svg>
 
 <a class="skip" href="#main" data-i18n="a11y.skip">Saltar al contenido</a>
 
@@ -467,13 +705,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 <header class="nav" id="nav">
   <div class="wrap nav-in">
     <a class="brand" href="#top" aria-label="MAMBA">
-      <svg class="brand-ico icon-mark" viewBox="0 0 64 64" aria-hidden="true">
-        <rect x=".5" y=".5" width="63" height="63" rx="13.5"/>
-        <g transform="translate(17.16 43.68) scale(.015789 -.015789)">
-          <path d="M742 -20 186 1500H618L960 594L1278 1500H1282L750 -20ZM188 1500V4H344V0H40V4H184V1496H30V1500ZM1850 1500V1496H1710V4H1850V0H1120V4H1280V1500Z"/>
-        </g>
-      </svg>
-      <span class="brand-wm">Mamba</span>
+      <span class="brand-wm"><svg viewBox="0 0 126.4 42" aria-hidden="true"><use href="#iso"/></svg><span class="w">MAMBA</span></span>
     </a>
     <nav class="nav-links" aria-label="Principal">
       <a href="#services" data-i18n="nav.services">Servicios</a>
@@ -507,7 +739,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
 <section class="hero" id="hero">
   <div class="wrap">
     <h1>
-      <span class="wordmark">Mamba</span>
+      <span class="wordmark"><svg class="hero-iso" viewBox="0 0 126.4 42" aria-hidden="true"><defs><path id="hi-pl" d="M0 0 a15 15 0 0 1 30 0 Z"/><path id="hi-pt" d="M0 0 a15 15 0 0 1 30 0 a15 6.0 0 0 1 -30 0 Z"/><mask id="hi-k0" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><use href="#hi-pl" transform="translate(8.400,0.000) scale(1.33333)" fill="#fff"/><use href="#hi-pl" transform="translate(48.400,0.000) scale(1.54667)" fill="#000"/><use href="#hi-pt" transform="translate(-16.400,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pt" transform="translate(26.800,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/></mask><mask id="hi-k1" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><use href="#hi-pl" transform="translate(51.600,0.000) scale(1.33333)" fill="#fff"/><use href="#hi-pt" transform="translate(-16.400,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pt" transform="translate(26.800,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/></mask><mask id="hi-k2" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><use href="#hi-pt" transform="translate(-13.200,11.000) scale(1.33333)" fill="#fff"/><use href="#hi-pt" transform="translate(26.800,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/></mask><mask id="hi-k3" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><use href="#hi-pt" transform="translate(30.000,11.000) scale(1.33333)" fill="#fff"/><use href="#hi-pt" transform="translate(70.000,11.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/></mask><mask id="hi-k4" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><use href="#hi-pt" transform="translate(73.200,11.000) scale(1.33333)" fill="#fff"/><use href="#hi-pl" transform="translate(5.200,22.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/></mask><mask id="hi-k5" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><use href="#hi-pl" transform="translate(8.400,22.000) scale(1.33333)" fill="#fff"/><use href="#hi-pl" transform="translate(48.400,22.000) scale(1.54667)" fill="#000"/></mask><mask id="hi-k6" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><use href="#hi-pl" transform="translate(51.600,22.000) scale(1.33333)" fill="#fff"/></mask><mask id="hi-kv" maskUnits="userSpaceOnUse" x="-400" y="-400" width="900" height="900"><rect x="-400" y="-400" width="900" height="900" fill="#fff"/><use href="#hi-pl" transform="translate(-38.000,22.000) scale(1.54667)" fill="#000"/><use href="#hi-pl" transform="translate(91.600,22.000) scale(1.54667)" fill="#000"/></mask></defs><g transform="translate(13.200,20.000)"><g mask="url(#hi-kv)"><rect class="hi-r" x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#hi-k0)"/><rect class="hi-r" x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#hi-k1)"/><rect class="hi-r" x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#hi-k2)"/><rect class="hi-r" x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#hi-k3)"/><rect class="hi-r" x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#hi-k4)"/><rect class="hi-r" x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#hi-k5)"/><rect class="hi-r" x="-400" y="-400" width="900" height="900" fill="currentColor" mask="url(#hi-k6)"/></g></g></svg><span class="w">MAMBA</span></span>
       <span class="claim rv" style="--d:520ms" data-i18n="hero.claim">No es suerte. <b>Es estrategia.</b></span>
     </h1>
     <div class="hero-cta rv" style="--d:660ms">
@@ -584,12 +816,7 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
     <div class="about">
       <div class="rv">
         <div class="seal" role="img" data-i18n-attr="aria-label:a11y.monogram" aria-label="Monograma de MAMBA">
-          <svg class="seal-ico icon-mark" viewBox="0 0 64 64" aria-hidden="true">
-            <rect x=".5" y=".5" width="63" height="63" rx="13.5"/>
-            <g transform="translate(17.16 43.68) scale(.015789 -.015789)">
-              <path d="M742 -20 186 1500H618L960 594L1278 1500H1282L750 -20ZM188 1500V4H344V0H40V4H184V1496H30V1500ZM1850 1500V1496H1710V4H1850V0H1120V4H1280V1500Z"/>
-            </g>
-          </svg>
+          <svg class="seal-ico" viewBox="0 0 126.4 42" aria-hidden="true"><use href="#iso"/></svg>
         </div>
       </div>
       <div class="about-copy">
@@ -673,7 +900,9 @@ footer{position:relative;z-index:1;border-top:1px solid var(--line);padding-bloc
   <div class="wrap">
     <div class="foot">
       <div>
-        <a class="brand" href="#top" aria-label="MAMBA" style="display:inline-block">Mamba</a>
+        <a class="brand" href="#top" aria-label="MAMBA" style="display:inline-block">
+          <span class="foot-wm"><svg viewBox="0 0 126.4 42" aria-hidden="true"><use href="#iso"/></svg><span class="w">MAMBA</span></span>
+        </a>
         <p class="foot-tag" data-i18n="ft.tag">No es suerte. Es estrategia.</p>
       </div>
       <div>
@@ -1013,57 +1242,73 @@ ESLÓGAN
   la comparación se ve antes de leerse. Se usa en el hero y como firma
   en el footer. Alternativas trabajadas: ver comentario en I18N.es.hero.
 
-SISTEMA TIPOGRÁFICO — tres roles que no se pisan
-  Bodoni Moda      EXCLUSIVA del wordmark y el monograma. No aparece en
+SISTEMA TIPOGRÁFICO — solo sans, dos roles
+  Se sacó Playfair Display (serif) para que todo el sitio sea
+  consistentemente sans-serif — títulos, cuerpo y lockup usan familias
+  geométricas/grotescas, sin mezclar registros.
+  Jost 500         EXCLUSIVA del lockup (isotipo + palabra). No aparece en
                    ningún otro sitio: esa exclusividad es lo que hace que
                    MAMBA se lea como marca y no como un título más.
-                   Eje óptico forzado a 96, tracking .13em, mayúsculas.
-                   El tracking amplio comunica precisión: nunca comprimirlo.
-  Playfair Display Títulos de sección. Didone también, pero de contraste
-                   moderado, así que aguanta cuerpos medios sin romperse.
-  Inter            Cuerpo, UI, botones y eslogan. Nunca por debajo de 16px.
+                   Geométrica, hecha de círculos — el mismo lenguaje de
+                   formas que las escamas del isotipo. Mayúsculas,
+                   tracking 0,24em.
+  Inter            Todo lo demás: títulos de sección (peso 600), cuerpo,
+                   UI, botones y eslogan. Nunca por debajo de 16px.
 
-MONOGRAMA
-  Contornos reales de Bodoni Moda extraídos del .ttf en la instancia
-  opsz 96, la misma del wordmark. No es una fuente renderizada ni un
-  dibujo que la imite: son los mismos vectores.
-  El gesto es el EJE DE PESO de la propia tipografía variable: peso 400
-  arriba, 900 abajo, fundidos por una máscara vertical. La letra crece
-  hacia la base — nace fina donde están las serifas de pelo y se asienta
-  abajo. No hay ornamento añadido de ningún tipo, y ese es el criterio:
-  el símbolo tenía que salir de una propiedad de la tipografía elegida,
-  no de una forma inventada aparte.
-  Regla: nunca deformar la Bodoni para acomodar un adorno. Si un gesto
-  no se puede expresar con los ejes de la fuente, no entra.
-  El favicon usa exactamente los mismos dos contornos y la misma máscara,
-  así que no depende de que cargue ninguna webfont.
+ISOLOGOTIPO — símbolo de escamas + "MAMBA"
+  Reemplaza al sistema anterior de M + recuadro (descartado por completo:
+  logotipo final entregado por Juan). Siete escamas en rombo, con la
+  segunda fila terminando en punta — construidas con la misma geometría
+  que la textura "piel de mamba" del sitio (los mismos arcos, en otra
+  composición). Un solo <symbol id="iso"> vive una vez en el <body>
+  (SVG oculto) y se reutiliza con <use href="#iso"/> en nav, hero, footer
+  y el sello de "Sobre MAMBA" — nunca se duplica el path. Usa
+  currentColor: no lleva color propio, hereda el color de texto del
+  elemento donde se usa.
+  Medidas del entregable de marca: icono 1,70× la altura de la palabra,
+  separación símbolo/palabra 0,58em, tracking de la palabra 0,24em,
+  margen de protección alrededor = la altura del isotipo.
+  Dos disposiciones posibles (horizontal y vertical, para formatos
+  cuadrados) — el sitio usa la horizontal en todos lados; la vertical no
+  se implementó por no tener, por ahora, un lugar cuadrado donde ir.
+  El sello de "Sobre MAMBA" usa el símbolo SOLO, sin la palabra.
+  El favicon reconstruye el símbolo directamente en el data-URI (es
+  vectorial, no depende de ninguna webfont) centrado en el mismo cuadrado
+  redondeado que usaba la M anterior.
 
 SEPARACIÓN DE SECCIONES
   Índice editorial: número + filete + nombre de sección. Separa y además
   orienta, que en un one-page sin casos de éxito refuerza la idea de método.
   Nada de curvas decorativas entre bloques.
 
-COLOR (Opción A "Veneno frío", activa)
-  Negro base       #0B0D0F   fondo dominante
-  Negro secundario #14171A   superficies, tarjetas, campos
-  Verde agua       #3FE0C5   acento primario, CTA, foco (11.8:1 sobre negro)
-  Verde agua osc.  #1FA98F   hover, glows
-  Violeta          #8B5CF6   degradés, bordes y glows (nunca texto pequeño)
-  Violeta oscuro   #5B21B6   fondos de banda
-  Violeta texto    #A78BFA   numeración y micro-labels (7.2:1 sobre negro)
-  Texto claro      #F4F6F5   cuerpo (17.9:1 sobre negro)
-  Texto secundario #A7AFAD   apoyos (8.7:1 sobre negro)
+COLOR (Opción F "Amatista", confirmada)
+  Recorrido: A (negro + aqua) descartada por parecido con CineAR → D
+  (fondo claro) descartada porque la textura de escamas no convencía ahí
+  → E (grafito + ámbar) probada → F, Amatista, es la confirmada: violeta
+  como acento único sobre grafito FRÍO (no el cálido de E — el violeta se
+  ensucia contra un negro con matiz cálido). Texto de los botones
+  OSCURO sobre el violeta (se probó también blanco; el oscuro ganó).
+  A, B, C, D y E siguen disponibles comentadas.
+  Grafito frío     #121017   fondo dominante
+  Grafito frío 2°  #1B1826   superficies, tarjetas, campos
+  Amatista         #8B5CF6   acento primario, CTA, foco
+  Amatista oscuro  #5B21B6   hover, glows, fondos de banda
+  Violeta oscuro   #5B21B6   degradés, bordes y glows (nunca texto pequeño)
+  Violeta profundo #3B1370   fondos de banda
+  Violeta claro    #C4B5FD   numeración y micro-labels (AA sobre grafito)
+  Texto claro      #F4F2F7   cuerpo (alto contraste sobre grafito)
+  Texto secundario #A7A2B3   apoyos
   Todos los pares texto/fondo verificados en AA o mejor.
 
 TEXTURA
   Malla de escamas metálicas sobre fondo mate. Tile SVG de 30×18px
   verificado como perfectamente repetible. Cada escama lleva su degradé
-  cresta→base: de ahí el volumen. Una banda de luz recorre la superficie
-  recortada por la misma forma, así que el brillo solo existe sobre las
-  placas. La intensidad NO es constante: --skin-a baja de .13 a .045 a lo
-  largo del primer viewport, de modo que la textura manda detrás del
-  header y se retira donde hay que leer. En móvil queda fija en .085 y
-  sin barrido de luz.
+  cresta→base: de ahí el volumen. Una banda de luz blanca recorre la
+  superficie recortada por la misma forma, con franjas ámbar/cobre a los
+  costados en vez de aqua/violeta. La intensidad NO es constante:
+  --skin-a baja de .13 a .045 a lo largo del primer viewport, de modo que
+  la textura manda detrás del header y se retira donde hay que leer. En
+  móvil queda fija en .085 y sin barrido de luz.
 
 TONO DE VOZ
   Registro impersonal / infinitivo, para España. Sin voseo ni tuteo.
@@ -1074,7 +1319,7 @@ TONO DE VOZ
   Test: si la frase la podría firmar cualquier agencia, se reescribe.
 
 MOTION
-  Wordmark: entra con el tracking abriéndose (keyframe `unfurl`).
+  Wordmark (lockup del hero): entra con blur + fade (keyframe `unfurl`).
   Secciones: keyframe `slither`, stagger de 90ms.
   Hover: siempre con easing; los enlaces se subrayan con el degradé de
   marca creciendo desde la izquierda.
